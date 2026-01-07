@@ -40,6 +40,7 @@ export default function Navbar() {
         <li><Link href="/">Home</Link></li>
         <li><Link href="/booking">Booking</Link></li>
         <li><Link href="/gallery">Galeri Photo</Link></li>
+        <li><Link href="/kalender">Kalender</Link></li>
       </ul>
 
       <Link href="/login" className="rounded-full bg-black px-6 py-2">
