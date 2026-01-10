@@ -10,14 +10,8 @@ export default function Navbar() {
   useEffect(() => {
     const onScroll = () => {
       const currentY = window.scrollY
-
-      // kalau scroll ke bawah dan sudah lewat sedikit (biar gak jitter)
-      if (currentY > lastScrollY.current && currentY > 80) {
-        setHidden(true)
-      } else {
-        setHidden(false)
-      }
-
+      if (currentY > lastScrollY.current && currentY > 80) setHidden(true)
+      else setHidden(false)
       lastScrollY.current = currentY
     }
 
@@ -28,24 +22,36 @@ export default function Navbar() {
   return (
     <nav
       className={[
-        'fixed top-0 z-50 flex w-full items-center justify-between px-16 py-6 text-white transition-transform duration-300',
+        'fixed top-0 z-50 w-full transition-transform duration-300',
         hidden ? '-translate-y-full' : 'translate-y-0',
+        'navbar-pad', // ✅ ini untuk mobile override
       ].join(' ')}
     >
-      <h1 style={{ fontFamily: 'EleganteClassica' }} className="text-lg">
-        Beranjak
-      </h1>
+      <div className="mx-auto flex max-w-7xl items-center justify-between">
+        <Link
+          href="/"
+          style={{ fontFamily: 'EleganteClassica' }}
+          className="text-lg text-white"
+        >
+          Beranjak
+        </Link>
 
-      <ul className="flex gap-10">
-        <li><Link href="/">Home</Link></li>
-        <li><Link href="/booking">Booking</Link></li>
-        <li><Link href="/gallery">Galeri Photo</Link></li>
-        <li><Link href="/kalender">Kalender</Link></li>
-      </ul>
+        {/* Desktop Menu */}
+        <ul className="hidden md:flex gap-10 text-white">
+          <li><Link href="/">Home</Link></li>
+          <li><Link href="/booking">Booking</Link></li>
+          <li><Link href="/gallery">Galeri Photo</Link></li>
+          <li><Link href="/kalender">Kalender</Link></li>
+        </ul>
 
-      <Link href="/" className="rounded-full bg-black px-6 py-2">
-        Login
-      </Link>
+        {/* Mobile CTA */}
+        <Link
+          href="/booking"
+          className="rounded-full bg-white px-4 py-2 text-sm font-semibold text-black md:px-6 md:py-2"
+        >
+          Booking
+        </Link>
+      </div>
     </nav>
   )
 }
