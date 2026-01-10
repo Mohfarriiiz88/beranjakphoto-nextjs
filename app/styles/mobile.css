@@ -1,47 +1,49 @@
 /* =========================================
-   Mobile-only overrides (<= 640px)
+   Mobile overrides
    ========================================= */
 @media (max-width: 640px) {
-  /* global spacing: kurangi padding default */
+  /* Hindari horizontal overflow */
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Container padding untuk semua section */
   .container-pad {
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
   }
 
-  /* navbar: kecilkan padding dan buat lebih rapat */
+  /* Navbar padding di mobile */
   .navbar-pad {
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
-    padding-top: 1rem !important;
-    padding-bottom: 1rem !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
   }
 
-  /* hero: jangan paksa full screen, supaya konten tidak ketimpa */
+  /* HERO: beri jarak aman dari navbar fixed */
   .hero-safe {
-    min-height: 90vh !important;
-    padding-top: 7rem !important;
-    padding-bottom: 3rem !important;
+    padding-top: 110px !important;  /* ini menghindari navbar menimpa konten */
+    padding-bottom: 40px !important;
+    min-height: 100vh !important;
   }
 
-  /* heading besar: pastikan tidak overflow */
+  /* HERO TITLE: jangan terlalu besar di HP */
   .hero-title {
-    font-size: 3rem !important;      /* 48px */
+    font-size: 48px !important;
     line-height: 1.0 !important;
     letter-spacing: -0.02em !important;
   }
 
-  /* grid dua kolom dipaksa jadi satu */
-  .grid-2-mobile-1 {
+  /* HERO GRID: 2 kolom jadi 1 kolom */
+  .hero-grid {
     grid-template-columns: 1fr !important;
+    gap: 24px !important;
   }
 
-  /* card: beri jarak dan jangan terlalu mepet */
-  .mobile-gap {
-    gap: 1rem !important;
-  }
-
-  /* kalender: pastikan tidak ketimpa navbar */
-  .page-top-safe {
-    padding-top: 6.5rem !important;
+  /* Kolom kanan (cards) jangan terlalu mepet */
+  .hero-right {
+    justify-content: flex-start !important;
   }
 }

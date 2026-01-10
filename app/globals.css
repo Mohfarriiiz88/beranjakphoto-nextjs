@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import "./styles/mobile.css";
+
 
 /* ✅ FONT EXTERNAL (TTF) */
 @font-face {
@@ -68,3 +68,4 @@ body::-webkit-scrollbar {
   width: 0;
   height: 0;
 }
+@import "./styles/mobile.css";
