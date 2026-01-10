@@ -7,7 +7,7 @@ export default function HeroSection() {
   return (
     <section className="relative h-screen text-white overflow-hidden">
       <Image
-        src="/images/galerrypreview.jpg"
+        src="/images/galerrypreview.JPG"
         alt="Beranjak Photo"
         fill
         priority

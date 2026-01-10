@@ -4,8 +4,8 @@ import { useState } from 'react'
 import TiltedCard from '@/components/ui/TiltedCard'
 
 const packages = [
-  { id: 1, title: 'Beranjak Potrait', image: '/images/heroPotrait.jpg' },
-  { id: 2, title: 'Beranjak Couple', image: '/images/heroCouple.jpg' },
+  { id: 1, title: 'Beranjak Potrait', image: '/images/heroPotrait.JPG' },
+  { id: 2, title: 'Beranjak Couple', image: '/images/heroCouple.JPG' },
   { id: 3, title: 'Beranjak Bestie', image: '/images/heroBestie.jpg' },
 ]
 
