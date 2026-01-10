@@ -43,7 +43,7 @@ export default function Navbar() {
         <li><Link href="/kalender">Kalender</Link></li>
       </ul>
 
-      <Link href="/login" className="rounded-full bg-black px-6 py-2">
+      <Link href="/" className="rounded-full bg-black px-6 py-2">
         Login
       </Link>
     </nav>
