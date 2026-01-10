@@ -3,11 +3,11 @@ import Reveal from '@/components/ui/Reveal'
 const services = [
   {
     title: 'Beranjak Portrait',
-    image: '/images/heroPotrait.jpg',
+    image: '/images/heroPotrait.JPG',
   },
   {
     title: 'Beranjak Couple',
-    image: '/images/heroCouple.jpg',
+    image: '/images/heroCouple.JPG',
   },
   {
     title: 'Beranjak Bestie',
