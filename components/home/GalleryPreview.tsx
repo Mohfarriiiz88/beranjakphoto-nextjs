@@ -17,7 +17,7 @@ export default function GalleryBanner() {
           >
             {/* Background image */}
             <Image
-              src="/images/glr.jpg"
+              src="/images/glr.JPG"
               alt="Galeri Photo"
               fill
               priority={false}
