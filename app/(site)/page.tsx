@@ -3,6 +3,7 @@ import ServiceSection from '@/components/home/ServiceSection'
 import StepsSection from '@/components/home/StepsSection'
 import GalleryPreview from '@/components/home/GalleryPreview'
 import FAQSection from '@/components/home/FAQSection'
+import AirisChat from '@/components/ui/AirisChat'
 
 export default function HomePage() {
   return (
@@ -12,6 +13,7 @@ export default function HomePage() {
       <StepsSection />
       <GalleryPreview />
       <FAQSection />
+      <AirisChat />
     </>
   )
 }

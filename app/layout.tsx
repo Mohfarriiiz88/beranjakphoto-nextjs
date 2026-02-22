@@ -1,25 +1,32 @@
-import './globals.css'
-import type { Metadata } from 'next'
-import Navbar from '@/components/layout/Navbar'
-import Footer from '@/components/layout/Footer'
+import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
+import "./globals.css";
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
-  title: 'Beranjak Photo',
-  description: 'Website booking jasa fotografer',
-}
+  title: "Beranjak Photo",
+  description: "Jasa fotografi profesional – booking & galeri foto",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="id">
-      <body>
-        <Navbar />
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
-        <Footer />
       </body>
     </html>
-  )
+  );
 }
