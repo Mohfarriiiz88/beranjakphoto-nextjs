@@ -3,12 +3,12 @@
 import Link from 'next/link'
 
 const menu = [
-  { label: 'Dashboard', href: '/dashboard' },
-  { label: 'Booking', href: '/dashboard/booking' },
-  { label: 'Kalender', href: '/dashboard/kalender' },
-  { label: 'Paket', href: '/dashboard/paket' },
-  { label: 'Klien', href: '/dashboard/klien' },
-  { label: 'Settings', href: '/dashboard/settings' },
+  { label: 'Dashboard', href: '/admin/dashboard' },
+  { label: 'Booking', href: '/admin/bookinglist' },
+  { label: 'Kalender', href: '/admin/calender' },
+  { label: 'Paket', href: '/admin/paket' },
+  { label: 'Klien', href: '/admin/client' },
+  { label: 'Galeri', href: '/admin/galeri' },
 ]
 
 export default function Sidebar() {

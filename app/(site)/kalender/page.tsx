@@ -1,4 +1,4 @@
-import CalendarDayView from '@/components/kalender/CalendarDayView'
+import CalendarDayView from '@/components/site/kalender/CalendarDayView'
 import { demoEvents } from '@/lib/kalender'
 
 export default function KalenderPage() {

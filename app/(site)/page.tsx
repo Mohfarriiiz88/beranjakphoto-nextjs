@@ -1,8 +1,8 @@
-import HeroSection from '@/components/home/HeroSection'
-import ServiceSection from '@/components/home/ServiceSection'
-import StepsSection from '@/components/home/StepsSection'
-import GalleryPreview from '@/components/home/GalleryPreview'
-import FAQSection from '@/components/home/FAQSection'
+import HeroSection from '@/components/site/home/HeroSection'
+import ServiceSection from '@/components/site/home/ServiceSection'
+import StepsSection from '@/components/site/home/StepsSection'
+import GalleryPreview from '@/components/site/home/GalleryPreview'
+import FAQSection from '@/components/site/home/FAQSection'
 import AirisChat from '@/components/ui/AirisChat'
 
 export default function HomePage() {

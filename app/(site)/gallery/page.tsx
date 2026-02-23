@@ -1,4 +1,4 @@
-import MasonryGallery from '@/components/gallery/MasonryGallery'
+import MasonryGallery from '@/components/site/gallery/MasonryGallery'
 
 const items = [
   { id: 1, src: '/images/gallery/1.JPG', title: 'Beranjak Portrait', category: 'Portrait' },

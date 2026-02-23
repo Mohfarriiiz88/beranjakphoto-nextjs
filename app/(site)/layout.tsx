@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
-import Navbar from '@/components/layout/Navbar';
-import Footer from '@/components/layout/Footer';
+import Navbar from '@/components/site/layout/Navbar';
+import Footer from '@/components/site/layout/Footer';
 
 export const metadata: Metadata = {
   title: 'Beranjak Photo',
