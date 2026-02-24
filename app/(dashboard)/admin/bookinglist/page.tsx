@@ -19,7 +19,7 @@ const dummyBookings: Booking[] = [
     package: 'Portrait',
     date: '12 Mar 2026',
     time: '10:00',
-    location: 'Alun-alun',
+    location: 'Alun-alun Tegal',
     status: 'Pending',
   },
   {
